@@ -1,0 +1,47 @@
+* identifiers --> $, _
+* keyword --> var, function, if, etc.
+* what is javascript literals and variables ?
+* what is the difference between expression and statement?
+* It is a good practice to declare all the variables at beginning of a script
+* if we re declare the variable, it will not loose it's value
+	EX:-
+		var carName = "Volvo";
+		var carName;
+		
+* x + = y ------> x = x + Y (this can be used for strings )
+
+* what is the diff between typeof and instaceof ?
+
+* exponentiation operator(**):- raises the first operand to the power of the second operand
+	EX:-
+		var x = 5;
+		var y = x ** 2;	// result is 25 --- 5*5
+		
+
+* ===  --> strict equal
+* !==  --> strict unequal
+
+* javascript data types are object, number, string, boolean etc.
+* the typeof function will returns the function not object
+	EX:-
+		typeof function employee(){} 	--> returns function
+		
+* we can access the object property in two ways
+
+	1. person.firstName
+	2. person['firstName]
+	
+*  In a function definition, this refers to the 'owner' of the function.
+*  In a method, this refers to the owner object.
+*  In an event, this refers to the element that received the event.
+*  when this is used alone, the owner is global object, so this refers to the global object
+	Ex:-
+		function employee(firstName, lastName) {
+			this.firstName = firstName;
+			this.lastName = lastName;
+			this.getFullName = function() {
+				return this.firstName + " " + this.lastName;
+			}
+		}
+
+* JS Strings
